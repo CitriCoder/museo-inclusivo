@@ -1,0 +1,27 @@
+* {
+    font-family: 'Average', serif;
+}
+
+body, .bg-coffee {
+    background-color: #684E32;
+}
+
+.bg-black-50 {
+    background-color: rgba(0,0,0,.5)
+}
+
+.navbar ul li a label {
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:focus {
+    background-color: #707070;
+}
+
+.w-30px {
+    width: 30px !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
