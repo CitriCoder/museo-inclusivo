@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+
+    <title>ADMIN - Index</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="barraLateral">
+        <div class="navbar-brand text-light mt-3">
+            <span class="titulo">Administrador</span>
+        </div>
+        <ul class="navbar-nav d-flex flex-column mt-3 w-100">
+            <hr class="separador">
+            <li class="nav-item w-100"><a class="nav-link text-light ps-4" href=""><i class="fa-solid fa-house me-3"></i>Inicio</a></li>
+            <hr class="separador">
+            <li class="nav-item w-100"><a class="nav-link text-light ps-4" href=""><i class="fa-solid fa-palette me-3"></i>Expositores</a></li>
+            <li class="nav-item w-100"><a class="nav-link text-light ps-4" href=""><i class="fa-solid fa-route me-3"></i>Visitas guiadas</a></li>
+            <li class="nav-item w-100"><a class="nav-link text-light ps-4" href=""><i class="fa-solid fa-window-restore me-3"></i>Sitio web</a></li>
+            <li class="nav-item w-100"><a class="nav-link text-light ps-4" href=""><i class="fa-solid fa-mobile me-3"></i>Aplicacion movil</a></li>
+            <hr class="separador">
+            <li class="nav-item w-100"><a class="nav-link text-light ps-4" href=""><i class="fa-solid fa-right-from-bracket me-3"></i>Cerrar sesión</a></li>
+        </ul>
+    </nav>
+
+    <section class="contenedorGlobal">
+        <div class="header col-12">
+            <button class="btn" id="desplegable"><i class="fa-solid fa-bars fa-xl"></i></button>
+            <span class="ms-3">INICIO</span>
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script>
+        var desplegable = document.querySelector("#desplegable")
+        var barraLateral = document.querySelector("#barraLateral")
+        var contenedor = document.querySelector(".contenedorGlobal")
+        desplegable.addEventListener("click", ()=>{
+            barraLateral.classList.toggle("desplegarMenu")
+            contenedor.classList.toggle("desplazar")
+        })
+    </script>
+    
+</body>
+
+</html>
