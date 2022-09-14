@@ -16,10 +16,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- SplideJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/themes/splide-default.min.css">
     </head>
     <body class="text-white">
         <!-- Navbar -->
-        <header class="navbar navbar-dark bg-black-50 sticky-top">
+        <header class="navbar navbar-dark bg-black-50">
             <nav class="container-fluid">
                 <a class="navbar-brand mx-auto" href="indexWeb.html">MUSEO INCLUSIVO</a>
             </nav>
@@ -29,20 +31,63 @@
         <!-- Body -->
         <section>
             <div class="position-relative">
-                <img src="https://picsum.photos/id/1081/1920/740" alt="test" class="d-block w-100">
+                <img src="assets/img/fondoWeb.jpg" alt="test" class="d-block w-100">
                 <div class="position-absolute w-50 h-25 bg-black-75 img-overlay py-2 text-center rounded-top-end">
                     <h5 class="fw-bold">INAUGURACIÓN DE NUESTRA WEB</h5>
                     <p class="mb-0 text-justify px-5">Podras recorrer y familiarizarte con nuestro sistema.
                         Seras capaz de navegar por todo nuestros expositor de manera online, ademas de poder consultar horarios y visitas guiadas.</p>
                 </div>
             </div>
-            <h5 class="bg-black-75 w-100 py-2 text-center">GALERIA ONLINE</h5>
+            <h4 class="bg-black-75 w-100 py-3 text-center mb-0">GALERIA ONLINE</h4>
+            <div class="bg-light text-black">
+                <h5 class="text-center py-5">Hechale un vistazo a nuestra amplia galeria online.</h5>
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="assets/img/carousel1.jpg" alt="prueba" class="img-fluid">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/carousel2.jpg" alt="prueba" class="img-fluid">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/carousel3.jpg" alt="prueba" class="img-fluid">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/carousel4.jpg" alt="prueba" class="img-fluid">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/img/carousel5.jpg" alt="prueba" class="img-fluid">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <h5 class="text-center py-5 mb-0">Explora y revive la historia viviendo la experiencia completa con nosotros.</h5>
+            </div>
         </section>
         <!-- /Body -->
-
+        <!-- Footer -->
+        <div class="bg-black">
+            <p class="py-5 text-center mb-0">Museo inclusivo por Marcos Rossetti, Franco Martinez Fosco, Lautaro Laraignee. &copy; 2022</p>
+        </div>
+        <!-- /Footer -->
 
         <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+        <script type="text/javascript">
+            var splide = new Splide( '.splide', {
+                type   : 'loop',
+                drag: 'free',
+                perPage: 3,
+                focus  : 'center',
+                autoScroll: {
+                    speed: 1,
+                },
+            }).mount( window.splide.Extensions );
 
+            splide.mount();
+        </script>
         <!-- Bootstrap 5 JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
