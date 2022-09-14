@@ -6,6 +6,10 @@ body, .bg-coffee {
     background-color: #684E32;
 }
 
+.bg-dark-coffee {
+    background-color: #342718;
+}
+
 .bg-black-50 {
     background-color: rgba(0,0,0,.5)
 }

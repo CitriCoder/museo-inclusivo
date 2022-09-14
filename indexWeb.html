@@ -21,9 +21,22 @@
     </head>
     <body class="text-white">
         <!-- Navbar -->
-        <header class="navbar navbar-dark bg-black-50">
+        <header class="navbar navbar-dark bg-dark-coffee sticky-top navbar-expand-md">
             <nav class="container-fluid">
                 <a class="navbar-brand" href="indexWeb.html">MUSEO INCLUSIVO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#visitas">Visitas Guiadas</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!-- /Navbar -->
@@ -38,7 +51,7 @@
                         Seras capaz de navegar por todo nuestros expositor de manera online, ademas de poder consultar horarios y visitas guiadas.</p>
                 </div>
             </div>
-            <h4 class="bg-black-75 w-100 py-3 text-center mb-0">GALERIA ONLINE</h4>
+            <h4 id="galeria" class="bg-black-75 w-100 py-3 text-center mb-0">GALERIA ONLINE</h4>
             <div class="bg-light text-black">
                 <h5 class="text-center py-5">Hechale un vistazo a nuestra amplia galeria online.</h5>
                 <section class="splide" aria-label="Splide Basic HTML Example">
@@ -65,7 +78,7 @@
                 <h5 class="text-center py-5 mb-0">Explora y revive la historia viviendo la experiencia completa con nosotros.</h5>
             </div>
 
-            <h4 class="bg-black-75 w-100 py-3 text-center mb-0">VISITAS GUIADAS</h4>
+            <h4 id="visitas" class="bg-black-75 w-100 py-3 text-center mb-0">VISITAS GUIADAS</h4>
             <div class="seccionVisitas">
                 <div class="bg-light text-black">
                     <h5 class="text-center py-5">Nuestras visitas se adaptan a cualquier grupo de personas.</h5>
