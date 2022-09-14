@@ -5,11 +5,10 @@ document.getElementById('voz_btn').addEventListener("click",()=>{
 });
 
 function falar(texto) {
-    var msg = new SpeechSynthesisUtterance(texto);
-    var voices = window.speechSynthesis.getVoices();
-    msg.volume = 1; // 0 to 1
-    msg.rate = 0.7; // 0.1 to 10
-    msg.pitch = 1; //0 to 2
-    msg.lang = 'es-AR';
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = texto;
+    msg.lang = "es-MX";
+    msg.rate = 0.7;
+    msg.pitch = 1;
     speechSynthesis.speak(msg);
 }
